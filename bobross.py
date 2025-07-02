@@ -20,11 +20,11 @@ bootstrap = Bootstrap5(app)
 csrf = CSRFProtect(app)
 
 
-username = 'doylear0_ADM'
-password = 'Wj6klfp'
+username = 'username'
+password = 'password'
 userpass = 'mysql+pymysql://' + username + ':' + password + '@'
 server  = 'warren.sewanee.edu'
-dbname   = '/doylear0'
+dbname   = '/databasename'
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = userpass + server + dbname
