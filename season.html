@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Episodes
+{% endblock %}
+
+
+{% block content %}
+
+<h1>Season {{ seas }} Episodes</h1>
+
+<p>Click any episode name.</p>
+
+    <ol>
+    {% for ep in eps %}
+        <li><a href="{{ url_for( 'detail', num=ep.ep_order ) }}">{{ ep.title }}</a></li>
+    {% endfor %}
+    </ol>
+
+<p><a href="{{ url_for('index') }}">Back to season selection</a></p>
+
+{% endblock %}
