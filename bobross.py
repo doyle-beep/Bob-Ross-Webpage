@@ -14,7 +14,7 @@ from wtforms import SelectField, SubmitField, RadioField # type: ignore
 db = SQLAlchemy()
 app = Flask(__name__)
 app.config.from_object(__name__)
-app.secret_key = 'tO$&!|0wkamvVia0?n$NqI'
+app.secret_key = 'secretkey'
 
 bootstrap = Bootstrap5(app)
 csrf = CSRFProtect(app)
